@@ -1,19 +1,25 @@
-const product = require("./services/products");
+const {getFullName, productType} = require("./services/products");  /*get/import the especifi functions*/
+
+const product = require("./services/products"); /*get/import all functions*/
 const config = require("./services/config");
+const database = require("./services/database");
 
 (async function main() {
 
-    console.log(config.client)
-    console.log(config.devArea)
-    console.log(product.productType)
-    console.log(product.getFullName("lukas","viado"))
+    // console.log(config.client)
+    // console.log(config.devArea)
+    // console.log(product.productType)
+    // console.log(product.getFullName("lukas","viado"))
     
-    await product.getUrl()
+    getFullName("321","mousepad")
+    
+
+    database.connnectToData("carlosData")
 
     // console.log('Carrinho compras')
-    // p.getFullName("123", "ronaldo")
-    // p.getFullName("1234", "mouse")
-    // p.getProductLabel("mousepad")
+    // product.getFullName("123", "ronaldo")
+    // product.getFullName("1234", "mouse")
+    // pro.getProductLabel("mousepad")
 
 
 })()

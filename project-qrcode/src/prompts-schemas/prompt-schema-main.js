@@ -1,0 +1,12 @@
+import chalk from "chalk";
+
+const promptSchemaMain = [
+    {
+    name: "select",
+    description:  chalk.yellow.bold("ESCOLHA A FERRAMENTA (1-QRCODE ou 2-PASSWORD )"),
+    pattern: /^[1-2+$]/,
+    message: chalk.red("Escolha entre 1 e 2"),
+    required: true
+    }
+]
+export default promptSchemaMain;

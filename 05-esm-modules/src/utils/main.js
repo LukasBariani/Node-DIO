@@ -1,4 +1,4 @@
-import {conctToData, desConctToData,dbType} from "./database.mjs";//usar mjs mostra q o arquivo é especificamento um modulo
+import {conctToData, desConctToData,dbType} from "./database.mjs";//usar mjs mostra q o arquivo é especificamente um modulo
 import {} from "./"
 
 console.log("Hellow ecma")

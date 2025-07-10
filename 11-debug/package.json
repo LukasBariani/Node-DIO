@@ -1,0 +1,21 @@
+{
+  "name": "11-debug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+"dist": "tsup src",
+"start:dev": "tsx src/index.ts",
+"start:watch": "tsx watch src/index.ts",
+"start:dist": "npm run dist && node dist/index.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "npx": "^10.2.2",
+    "tsup": "^8.5.0",
+    "typescritp": "^1.0.0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "ex_typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dist": "npm run dist && node src/index.js",
+    "dist": "tsup src",
+    "start:dev": "tsx src/index.ts",
+    "start:dev:watch": "tsx watch src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}

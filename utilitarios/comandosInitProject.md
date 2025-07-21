@@ -12,11 +12,15 @@ echo 'console.log("hello world");' > src\dado.ts
 
 # Instala as dependências
 
-npm i typescript tsx tsup
+npm i typescript tsx tsup -D
 
 # Cria o arquivo tsconfig
 
 npx tsc --init
+
+# Criar o .gitignore
+/node_modules
+
 
 # Scripts padrões
 
@@ -26,3 +30,9 @@ npx tsc --init
 "start:watch": "tsx watch src/index.ts",
 "start:dist": "npm run dist && node dist/index.js"
 },
+
+# Colocar module 
+
+```js
+"type": "module",
+``` 
